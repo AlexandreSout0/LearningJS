@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+<style>
+    /*
+    Estilo em CSS
+    */
+    body 
+    {
+        background-color: rgb(195, 156, 231);
+        color: white;
+        font: normal 20pt Arial;
+    }
+
+    h1
+    {
+        color:rgb(242, 245, 76)
+    }
+</style>
+
+
+
+</head>
+
+
+<body>
+    <!-- HMTL base para teste Javascript -->
+    <h1>Hello Word!</h1>
+    <p>Lorem ipsum dolor sitre,</p>
+    <script>
+            /*
+        Casting de variaveis, para interio e para float
+        number.parseInt();
+        numberp=.parseFloat();
+        */
+        var n1 = Number.parseInt(window.prompt('Digite um número'));
+        var n2 = Number.parseInt(window.prompt('Digite outro número'));
+
+        var soma = n1 + n2;
+        var teste = n1 + n2;
+        window.alert('A soma dos valores é ' + soma );
+        /* Casting, para string String()         */
+        window.alert('A soma dos valores é ' + String(soma) );
+        /* Usando modelo de template string*/
+        window.alert(`a soma dos valores é ${soma} e tbm teste ${teste}`)
+        /*
+        var s = 'JavaScript'
+        s.lenght() numero de caracteres que a string possui
+        s.toUpperCase() deixa todos caracteres da string maiusculos
+        s.toLowerCase() deixa todos caracteres da string minisculo
+        
+        */
+
+    </script>
+
+</body>
+</html>
