@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Step With DOM </title>
+<style>
+    /*
+    Estilo em CSS
+    */
+    body 
+    {
+        background-color: rgb(56, 99, 241);
+        color: white;
+        font: normal 18pt helvetica;
+    }
+
+</style>
+
+
+
+</head>
+
+
+<body>
+    <!-- HMTL base para teste Javascript -->
+    <h1>Starting studies with DOM</h1>
+    <p>Result is Here</p>
+    <p>Learning use the <strong>DOM</strong> em JavaScript. </p>
+    <div id = "msg">Click on me</div>
+
+    <script>
+        /*
+        var corpo = window.document.body;
+        corpo.style.background = 'black';
+        */
+        var p1 = window.document.getElementsByTagName('p')[1]; /* Pega o conteudo do paragrafo e poem na variavel*/
+      
+
+        p1.style.color = 'red';
+    
+        window.document.write(p1.innerHTML + '</br>'); // innerHTML pega o texto e a formatação HTML
+        window.document.write(p1.innerText + '</br>'); // innerText pega somento o texto
+
+        var d = window.document.getElementById('msg');
+        d.style.background = 'green'
+        d.innerHTML = 'Estou aguardando'
+
+
+    </script>
+
+</body>
+</html>
